@@ -54,7 +54,7 @@ Public Class Form1
     Private Sub Gen_Tick(sender As Object, e As EventArgs) Handles Gen.Tick
         Main()
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/Dan/Desktop/dictionary.txt", True)
+        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/%username%/Desktop/dictionary.txt", True)
         file.WriteLine(TextBox1.Text)
         file.Close()
     End Sub
@@ -77,7 +77,7 @@ Public Class Form1
     Private Sub letter_Tick(sender As Object, e As EventArgs) Handles letter.Tick
         LetterOnly()
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/Dan/Desktop/dictionary.txt", True)
+        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/%username%/Desktop/dictionary.txt", True)
         file.WriteLine(TextBox1.Text)
         file.Close()
     End Sub
@@ -93,7 +93,7 @@ Public Class Form1
     Private Sub Allvals_Tick(sender As Object, e As EventArgs) Handles Allvals.Tick
         ALL()
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/Dan/Desktop/dictionary.txt", True)
+        file = My.Computer.FileSystem.OpenTextFileWriter("C:/Users/%username%/Desktop/dictionary.txt", True)
         file.WriteLine(TextBox1.Text)
         file.Close()
     End Sub
